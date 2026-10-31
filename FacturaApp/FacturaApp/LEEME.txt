@@ -1,0 +1,15 @@
+La app NO se conecta a MySQL: habla con tu programa de NetBeans (que sigue usando MySQL).
+El programa de escritorio debe estar ABIERTO para que el celular funcione.
+(El servidor ya viene integrado en tu proyecto: arranca solo al abrir el menú principal.)
+
+1) Windows (PowerShell como administrador), abre el puerto 8080 para la red privada:
+   netsh advfirewall firewall add rule name="Facturacion API 8080" dir=in action=allow protocol=TCP localport=8080 profile=private
+2) Mira la IP de tu PC con ipconfig (IPv4, ej. 192.168.1.15) y ponla en
+   app/src/main/java/gt/edu/umg/facturaapp/Config.java  (HOST). La clave ya coincide con tu programa.
+3) Celular y PC en la MISMA WiFi (red "Privada" en Windows).
+4) Android Studio: File > Open > carpeta FacturaApp, espera el Gradle sync, conecta el celular
+   (Depuración USB) y pulsa Run.
+   Si Studio se queja del Gradle wrapper: crea un proyecto nuevo "Empty Views Activity" (Java,
+   package gt.edu.umg.facturaapp, minSdk 26) y copia dentro app/src y app/build.gradle.
+PRUEBA RÁPIDA: en el navegador del celular abre http://IP_DE_LA_PC:8080/api/ping
+(dirá "Clave de API incorrecta": eso confirma que la red y el puerto funcionan).

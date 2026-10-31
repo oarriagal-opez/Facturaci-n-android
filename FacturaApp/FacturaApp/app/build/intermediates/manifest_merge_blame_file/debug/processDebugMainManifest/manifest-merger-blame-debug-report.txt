@@ -1,0 +1,84 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="gt.edu.umg.facturaapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\izqui\Desktop\FacturaApp\FacturaApp\app\src\main\AndroidManifest.xml:4:5-67
+11-->C:\Users\izqui\Desktop\FacturaApp\FacturaApp\app\src\main\AndroidManifest.xml:4:22-64
+12
+13    <permission
+13-->[androidx.core:core:1.9.0] C:\Users\izqui\.gradle\caches\transforms-4\62bd5f0c933634171ed4412e7920dc4c\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+14        android:name="gt.edu.umg.facturaapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+14-->[androidx.core:core:1.9.0] C:\Users\izqui\.gradle\caches\transforms-4\62bd5f0c933634171ed4412e7920dc4c\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+15        android:protectionLevel="signature" />
+15-->[androidx.core:core:1.9.0] C:\Users\izqui\.gradle\caches\transforms-4\62bd5f0c933634171ed4412e7920dc4c\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+16
+17    <uses-permission android:name="gt.edu.umg.facturaapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+17-->[androidx.core:core:1.9.0] C:\Users\izqui\.gradle\caches\transforms-4\62bd5f0c933634171ed4412e7920dc4c\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+17-->[androidx.core:core:1.9.0] C:\Users\izqui\.gradle\caches\transforms-4\62bd5f0c933634171ed4412e7920dc4c\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+18
+19    <application
+19-->C:\Users\izqui\Desktop\FacturaApp\FacturaApp\app\src\main\AndroidManifest.xml:6:5-20:19
+20        android:allowBackup="true"
+20-->C:\Users\izqui\Desktop\FacturaApp\FacturaApp\app\src\main\AndroidManifest.xml:7:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.9.0] C:\Users\izqui\.gradle\caches\transforms-4\62bd5f0c933634171ed4412e7920dc4c\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+22        android:debuggable="true"
+23        android:extractNativeLibs="false"
+24        android:label="Facturación"
+24-->C:\Users\izqui\Desktop\FacturaApp\FacturaApp\app\src\main\AndroidManifest.xml:9:9-36
+25        android:testOnly="true"
+26        android:theme="@style/Theme.FacturaApp"
+26-->C:\Users\izqui\Desktop\FacturaApp\FacturaApp\app\src\main\AndroidManifest.xml:10:9-48
+27        android:usesCleartextTraffic="true" >
+27-->C:\Users\izqui\Desktop\FacturaApp\FacturaApp\app\src\main\AndroidManifest.xml:8:9-44
+28        <activity
+28-->C:\Users\izqui\Desktop\FacturaApp\FacturaApp\app\src\main\AndroidManifest.xml:11:9-19:20
+29            android:name="gt.edu.umg.facturaapp.MainActivity"
+29-->C:\Users\izqui\Desktop\FacturaApp\FacturaApp\app\src\main\AndroidManifest.xml:12:13-41
+30            android:exported="true"
+30-->C:\Users\izqui\Desktop\FacturaApp\FacturaApp\app\src\main\AndroidManifest.xml:13:13-36
+31            android:windowSoftInputMode="adjustResize" >
+31-->C:\Users\izqui\Desktop\FacturaApp\FacturaApp\app\src\main\AndroidManifest.xml:14:13-55
+32            <intent-filter>
+32-->C:\Users\izqui\Desktop\FacturaApp\FacturaApp\app\src\main\AndroidManifest.xml:15:13-18:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->C:\Users\izqui\Desktop\FacturaApp\FacturaApp\app\src\main\AndroidManifest.xml:16:17-69
+33-->C:\Users\izqui\Desktop\FacturaApp\FacturaApp\app\src\main\AndroidManifest.xml:16:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->C:\Users\izqui\Desktop\FacturaApp\FacturaApp\app\src\main\AndroidManifest.xml:17:17-77
+35-->C:\Users\izqui\Desktop\FacturaApp\FacturaApp\app\src\main\AndroidManifest.xml:17:27-74
+36            </intent-filter>
+37        </activity>
+38
+39        <provider
+39-->[androidx.emoji2:emoji2:1.2.0] C:\Users\izqui\.gradle\caches\transforms-4\b185c0d2974f0a49bf5a7a93c214c1a7\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+40            android:name="androidx.startup.InitializationProvider"
+40-->[androidx.emoji2:emoji2:1.2.0] C:\Users\izqui\.gradle\caches\transforms-4\b185c0d2974f0a49bf5a7a93c214c1a7\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+41            android:authorities="gt.edu.umg.facturaapp.androidx-startup"
+41-->[androidx.emoji2:emoji2:1.2.0] C:\Users\izqui\.gradle\caches\transforms-4\b185c0d2974f0a49bf5a7a93c214c1a7\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+42            android:exported="false" >
+42-->[androidx.emoji2:emoji2:1.2.0] C:\Users\izqui\.gradle\caches\transforms-4\b185c0d2974f0a49bf5a7a93c214c1a7\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+43            <meta-data
+43-->[androidx.emoji2:emoji2:1.2.0] C:\Users\izqui\.gradle\caches\transforms-4\b185c0d2974f0a49bf5a7a93c214c1a7\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+44                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+44-->[androidx.emoji2:emoji2:1.2.0] C:\Users\izqui\.gradle\caches\transforms-4\b185c0d2974f0a49bf5a7a93c214c1a7\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+45                android:value="androidx.startup" />
+45-->[androidx.emoji2:emoji2:1.2.0] C:\Users\izqui\.gradle\caches\transforms-4\b185c0d2974f0a49bf5a7a93c214c1a7\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+46            <meta-data
+46-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\izqui\.gradle\caches\transforms-4\20c02b3182db97b2414d9722c05c8b2a\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+47                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+47-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\izqui\.gradle\caches\transforms-4\20c02b3182db97b2414d9722c05c8b2a\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+48                android:value="androidx.startup" />
+48-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\izqui\.gradle\caches\transforms-4\20c02b3182db97b2414d9722c05c8b2a\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+49        </provider>
+50    </application>
+51
+52</manifest>

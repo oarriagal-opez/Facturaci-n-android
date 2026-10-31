@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "gt.edu.umg.facturaapp-debug-22:/layout_activity_main.xml.flat",
+        "source": "gt.edu.umg.facturaapp-main-24:/layout/activity_main.xml"
+    },
+    {
+        "merged": "gt.edu.umg.facturaapp-debug-22:/layout_item_detalle.xml.flat",
+        "source": "gt.edu.umg.facturaapp-main-24:/layout/item_detalle.xml"
+    }
+]

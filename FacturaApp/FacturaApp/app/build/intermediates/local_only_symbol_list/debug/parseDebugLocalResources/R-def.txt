@@ -1,0 +1,28 @@
+R_DEF: Internal format may change without notice
+local
+id btnAgregar
+id btnEliminar
+id btnGuardar
+id etCantidad
+id etDireccion
+id etFecha
+id etIdProducto
+id etNit
+id etNombre
+id etNumeroFactura
+id etPrecio
+id rbEnvio
+id rbRecoger
+id rbVentaTienda
+id rgEntrega
+id rvDetalle
+id spProductos
+id tvItemCant
+id tvItemId
+id tvItemNombre
+id tvItemPrecio
+id tvItemSub
+id tvTotal
+layout activity_main
+layout item_detalle
+style Theme.FacturaApp

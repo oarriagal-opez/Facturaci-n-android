@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:layout_width="110dp" android:layout_height="wrap_content" android:text="No. Factura:" android:textStyle="bold" />
+            <EditText
+                android:id="@+id/etNumeroFactura"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="none"
+                android:imeOptions="actionNone"
+                android:maxLines="1" android:enabled="false" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:layout_width="110dp" android:layout_height="wrap_content" android:text="NIT Cliente:" android:textStyle="bold" />
+            <EditText
+                android:id="@+id/etNit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="textCapCharacters"
+                android:imeOptions="actionNext"
+                android:maxLines="1"  />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:layout_width="110dp" android:layout_height="wrap_content" android:text="Nombre Cliente:" android:textStyle="bold" />
+            <EditText
+                android:id="@+id/etNombre"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="textPersonName"
+                android:imeOptions="actionNext"
+                android:maxLines="1"  />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:layout_width="110dp" android:layout_height="wrap_content" android:text="Dirección:" android:textStyle="bold" />
+            <EditText
+                android:id="@+id/etDireccion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="textPostalAddress"
+                android:imeOptions="actionNext"
+                android:maxLines="1"  />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:layout_width="110dp" android:layout_height="wrap_content" android:text="Fecha:" android:textStyle="bold" />
+            <EditText
+                android:id="@+id/etFecha"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="none"
+                android:imeOptions="actionNone"
+                android:maxLines="1" android:enabled="false" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:layout_width="110dp" android:layout_height="wrap_content" android:text="ID Producto:" android:textStyle="bold" />
+            <EditText
+                android:id="@+id/etIdProducto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:maxLines="1"  />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:layout_width="110dp" android:layout_height="wrap_content" android:text="Seleccionar:" android:textStyle="bold" />
+            <Spinner android:id="@+id/spProductos" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:layout_width="110dp" android:layout_height="wrap_content" android:text="Cantidad:" android:textStyle="bold" />
+            <EditText
+                android:id="@+id/etCantidad"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:maxLines="1"  />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:layout_width="110dp" android:layout_height="wrap_content" android:text="Precio:" android:textStyle="bold" />
+            <EditText
+                android:id="@+id/etPrecio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:imeOptions="actionDone"
+                android:maxLines="1"  />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:orientation="horizontal">
+            <TextView android:layout_width="110dp" android:layout_height="wrap_content" android:text="Total: Q" android:textSize="20sp" android:textStyle="bold" />
+            <TextView android:id="@+id/tvTotal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.00" android:textSize="20sp" android:textStyle="bold" />
+        </LinearLayout>
+
+        <RadioGroup android:id="@+id/rgEntrega" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:orientation="vertical">
+            <RadioButton android:id="@+id/rbVentaTienda" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="Venta en tienda" />
+            <RadioButton android:id="@+id/rbRecoger" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Recoger en tienda" />
+            <RadioButton android:id="@+id/rbEnvio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Envío a domicilio" />
+        </RadioGroup>
+
+        <Button android:id="@+id/btnAgregar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Agregar Producto" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:background="#E0E0E0" android:orientation="horizontal" android:padding="8dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="ID" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="3" android:text="Producto" android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.5" android:gravity="end" android:text="Cant." android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:gravity="end" android:text="P. Unit." android:textStyle="bold" />
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:gravity="end" android:text="Subtotal" android:textStyle="bold" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="80dp"
+            android:nestedScrollingEnabled="false" />
+
+        <Button android:id="@+id/btnEliminar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Eliminar Selección" />
+        <Button android:id="@+id/btnGuardar" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Guardar Factura" />
+    </LinearLayout>
+</ScrollView>
